@@ -604,7 +604,7 @@ padding-inline-start: 30px;
 .card6{
     background-color: rgba(27, 147, 75, 1);
 }
-#strategic-pillars .strategic-pillars-card{
+.strategic-pillars-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -612,7 +612,7 @@ padding-inline-start: 30px;
     padding-inline: 10px;
     border-radius: 6px;
 }
-#strategic-pillars .strategic-pillars-card:hover .strategic-pillars-card-text p{
+.strategic-pillars-card:hover .strategic-pillars-card-text p{
     display: flex;
 }
 .strategic-pillars-card-img{
@@ -649,23 +649,22 @@ letter-spacing: 0%;
 text-align: center;
 text-transform: capitalize;
 color: #ffffff;
-
 }
 @media (max-width:767px){
     #strategic-pillars .row{
         gap: 10px;
     }
-    #strategic-pillars .strategic-pillars-card{
+    .strategic-pillars-card{
         flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-inline-start: 40px;
     }
-    #strategic-pillars .strategic-pillars-card-img{
+    .strategic-pillars-card-img{
         margin-block: 25px;
         justify-content: center;
     }
-    #strategic-pillars .strategic-pillars-card-text{
+    .strategic-pillars-card-text{
         padding-inline: 10px;
         padding-block: 20px;
         height: 100%;
@@ -675,14 +674,14 @@ color: #ffffff;
         align-items: start;
         gap: 4px;
     }
-    #strategic-pillars .strategic-pillars-card-text h2{
+    .strategic-pillars-card-text h2{
         padding-block: 0 4px;
     }
-    #strategic-pillars .strategic-pillars-card-text p{
+    .strategic-pillars-card-text p{
         font-size: 14px;
         text-align: start;
     }
-    #strategic-pillars .strategic-pillars-card-img{
+    .strategic-pillars-card-img{
     margin-block-start: 15px;
     margin-inline-start: -60px;
 }
@@ -932,7 +931,7 @@ text-align: center;
 #gs-strategic-objectives{
     padding-block-start: 56px;
 }
-.so-card{
+.gs-card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -943,7 +942,7 @@ text-align: center;
     border-radius: 26px;
     margin-block-end: 18px;
 }
-.so-card h3{
+.gs-card h3{
 font-weight: 700;
 font-style: Bold;
 font-size: 128px;
@@ -952,7 +951,7 @@ letter-spacing: 0%;
 text-align: center;
 color: rgba(245, 239, 219, 1);
 }
-.so-card p{
+.gs-card p{
 font-weight: 400;
 font-size: 18px;
 line-height: 30px;
@@ -1009,7 +1008,7 @@ line-height: 40px;
 letter-spacing: 3%;
 color: rgba(12, 12, 12, 1);
 }
-.box{
+.gs-box{
     background-color: rgba(240, 240, 240, 0.45);
 }
 .gs-img-box{
@@ -1179,10 +1178,7 @@ color: rgba(20, 73, 32, 1);
 #meet-the-team .gs-box-block-text p{
     padding-inline: 18%;
 }
-/* .gs-box-secondery {
-    position: relative;
-} */
- .gs-box-secondery{
+.gs-box-secondery{
     overflow: hidden;
  }
 .gs-box-secondery::after{
@@ -1195,24 +1191,25 @@ color: rgba(20, 73, 32, 1);
     z-index: 1;
     transition: all .8s ease;
 }
-.gs-box-img{
+.gs-img-box{
     position: relative;
     display: flex;
 }
-.gs-box-img img{
+.gs-img-box img{
     width: 100%;
     transition: all .8s ease;
 }
-.gs-box-text{
+.gs-text-box{
     display: flex;
     flex-direction: column;
     gap: 6px;
     align-items: center;
     position: absolute;
+    inset-inline: 0;
     inset-block-end: 58px;
 }
-.gs-box-text h2,
-.gs-box-text p{
+.gs-text-box h2,
+.gs-text-box p{
 font-weight: 700;
 font-style: Bold;
 font-size: 32px;
@@ -1222,7 +1219,7 @@ text-align: center;
 text-transform: uppercase;
 color: rgba(250, 250, 250, 1);
 }
-.gs-box-text p{
+.gs-text-box p{
 font-weight: 400;
 color: rgba(161, 211, 23, 1);
 }
