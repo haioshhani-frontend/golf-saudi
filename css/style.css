@@ -312,7 +312,7 @@ header nav .container .navbar-toggler{
 #hero .gs-hero-secondary img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .gs-hero-secondary .gs-hero-logo{
     position: absolute;
